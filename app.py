@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 
 # Load the trained model pipeline (includes preprocessing)
-model = joblib.load(r"C:\Users\DELL\Downloads\best_fit_model (2).pkl")
+model = joblib.load("best_fit_model (2).pkl")
 
 # Sidebar Navigation
 st.sidebar.title("📌 Navigation")
@@ -99,4 +99,5 @@ elif page == "📊 Prediction":
         # we can directly pass the dataframe to model.predict()
         prediction = model.predict(df)[0]
         st.success(f"💰 Predicted Discount Price: ₹{prediction:,.2f}")
+
 
