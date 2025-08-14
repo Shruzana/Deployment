@@ -12,7 +12,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 # 1️⃣ Load the dataset
 # ====================
 # Replace with your dataset file
-data = pd.read_csv(r"C:\Users\user\OneDrive\Desktop\new\data\Cleaned_ecommerce_data.csv")
+data = pd.read_csv(r"C:\Users\DELL\Downloads\Cleaned_ecommerce_data.csv")
 
 # Example expected columns:
 # Brand, RAM, ROM, Display_Size, Battery, Front_Cam(MP), Back_Cam(MP), Discount_Price
@@ -75,3 +75,4 @@ print(f"📈 R² Score: {r2:.2f}")
 # ====================
 joblib.dump(pipeline, "best_fit_model.pkl")
 print("💾 Model saved as best_fit_model.pkl")
+
