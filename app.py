@@ -99,5 +99,7 @@ elif page == "📊 Prediction":
         # we can directly pass the dataframe to model.predict()
         prediction = model.predict(df)[0]
         st.success(f"💰 Predicted Discount Price: ₹{prediction:,.2f}")
+        st.balloons()
+
 
 
