@@ -73,6 +73,7 @@ print(f"📈 R² Score: {r2:.2f}")
 # ====================
 # 7️⃣ Save the model
 # ====================
-joblib.dump(pipeline, "best_fit_model.pkl")
+joblib.dump(pipeline, "best_fit_model (2).pkl")
 print("💾 Model saved as best_fit_model.pkl")
+
 
