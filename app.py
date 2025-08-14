@@ -100,6 +100,6 @@ elif page == "📊 Prediction":
         prediction = model.predict(df)[0]
         st.success(f"💰 Predicted Discount Price: ₹{prediction:,.2f}")
         st.balloons()
-        st.success(f"💰 Predicted Discount Price: ₹{prediction:,.2f}")
-        st.balloons()
+    
+
 
