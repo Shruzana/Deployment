@@ -85,12 +85,12 @@ elif page == "📊 Prediction":
     input_features['Brand'] = st.selectbox("Select Brand", brands)
 
     # Numeric inputs
-    input_features['RAM'] = st.number_input("Enter RAM (GB)", min_value=0.0)
-    input_features['ROM'] = st.number_input("Enter ROM (GB)", min_value=0.0)
+    input_features['RAM'] = st.number_input("Enter RAM (GB)", min_value=0)
+    input_features['ROM'] = st.number_input("Enter ROM (GB)", min_value=0)
     input_features['Display_Size'] = st.number_input("Enter Display Size (inches)", min_value=0.0)
-    input_features['Battery'] = st.number_input("Enter Battery Capacity (mAh)", min_value=0.0)
-    input_features['Front_Cam(MP)'] = st.number_input("Enter Front Camera (MP)", min_value=0.0)
-    input_features['Back_Cam(MP)'] = st.number_input("Enter Back Camera (MP)", min_value=0.0)
+    input_features['Battery'] = st.number_input("Enter Battery Capacity (mAh)", min_value=0)
+    input_features['Front_Cam(MP)'] = st.number_input("Enter Front Camera (MP)", min_value=0)
+    input_features['Back_Cam(MP)'] = st.number_input("Enter Back Camera (MP)", min_value=0)
 
     # Predict Button
     if st.button("🚀 Predict Discount Price"):
@@ -100,5 +100,6 @@ elif page == "📊 Prediction":
         prediction = model.predict(df)[0]
         st.success(f"💰 Predicted Discount Price: ₹{prediction:,.2f}")
         st.balloons()
+
 
 
