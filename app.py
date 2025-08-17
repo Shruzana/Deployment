@@ -81,7 +81,9 @@ elif page == "📊 Prediction":
     input_features = {}
 
     # Brand dropdown
-    brands = ['Samsung', 'Apple', 'Redmi', 'OnePlus', 'Realme', 'Vivo', 'Oppo', 'Motorola', 'Poco', 'Others']
+    brands = ['poco', 'cmf', 'motorola', 'oppo', 'vivo', 'samsung', 'redmi','apple', 'infinix', 'tecno', 'oneplus', 'realme', 'iqoo',
+       'nothing', 'google', 'lava', 'alcatel', 'honor', 'itel', 'xiaomi','karbonn', 'jmax', 'hmd', 'iphone', 'acer', 'jiobharat', 'nokia','elfora','Others']
+    
     input_features['Brand'] = st.selectbox("Select Brand", brands)
 
     # Numeric inputs
@@ -100,6 +102,7 @@ elif page == "📊 Prediction":
         prediction = model.predict(df)[0]
         st.success(f"💰 Predicted Discount Price: ₹{prediction:,.2f}")
         st.balloons()
+
 
 
 
